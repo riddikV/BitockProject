@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--index-i: calc(1vw + 1vh);
+	--background-full: #f5f7fa;
+}
+
+body{
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+}
+
+/*nav main*/
+.header__main{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.header__main_style {
+	background-color:aliceblue;
+	width: calc(var(--index-i)*3.75);
+	height: 100vh;
+
+	border-right: 1px solid rgba(128, 128, 128, 0.167);
+}
+
+.nav_companent svg {
+	width: calc(var(--index-x)*1.1);
+	height: calc(var(--index-x)*1.1);
+}
