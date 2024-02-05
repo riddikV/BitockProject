@@ -11,6 +11,9 @@
 	--background-full: #1c1e26;
 	--border-r: #2c2e3b;
 	--color-i: #5a74ff;
+	--color-in: #b8bccf;
+	--color-back: #27282c;
+	--background-b: #17181c;
 }
 
 body {
@@ -26,6 +29,18 @@ body {
 	width: 100vw;
 }
 
+
+/*content*/
+.content {
+	width: 100%;
+	height: 100%;
+	padding-left: 80px;
+}
+.content_style {
+	background-color: var(--background-full);
+}
+/*content end*/
+
 .left__main {
 	position: absolute;
 	left: 0;
@@ -38,15 +53,6 @@ body {
 .left__main_style {
 	border-right: 2px solid var(--border-r);
 	overflow: hidden;
-	background-color: var(--background-full);
-}
-
-.content {
-	width: 100%;
-	height: 100%;
-	padding-left: 80px;
-}
-.content_style {
 	background-color: var(--background-full);
 }
 
@@ -76,11 +82,32 @@ body {
 .main_navLink {
 	height: 62px;
 	text-align: center;
+	text-decoration: none;
+	color: var(--color-in);
+	margin-bottom: 24px;
+}
+.main_navLink .active{
+	color: var(--color-i);
+}
+.main_navLin_a {
+	max-width: 59px;
+	padding: 9px 16px;
+	border-radius: 8px;
+	transition: all .4s ease-in-out;
+}
+.main_navLin_a:hover{
+	background: var(--color-back);
+}
+.main_navLin_a .active{
+	background: var(--background-b);
 }
 
-.main_navLink i{
-	height: 40px;
-	width: 56px;
-	font-size: 30px;
-	color: var(--color-i);
+.main_navLin_a i{
+	font-size: 21px;
+}
+.main_navLin_span {
+	text-decoration: none;
+	font-size: 12px;
+	margin-top: 1px;
+	padding-top: 2px;
 }
