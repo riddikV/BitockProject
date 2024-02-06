@@ -51,16 +51,17 @@ body {
 	min-height: 100%;
 }
 .left__main_style {
-	border-right: 2px solid var(--border-r);
+	border-right: 1px solid var(--border-r);
 	overflow: hidden;
 	background-color: var(--background-full);
 }
 
 .left__main_logo {
+	height: 12%;
 	text-align: center;
 	padding-top: 38px;
 	margin: 0 16px;
-	border-bottom: 2px solid var(--border-r);
+	border-bottom: 1px solid var(--border-r);
 
 }
 .left__main_logo i{
@@ -73,8 +74,10 @@ body {
 .main_navLinks {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
+
+	height: 63%;
 
 	margin-top: 28px;
 }
@@ -86,7 +89,7 @@ body {
 	color: var(--color-in);
 	margin-bottom: 24px;
 }
-.main_navLink .active{
+.main_navLink.active{
 	color: var(--color-i);
 }
 .main_navLin_a {
@@ -98,7 +101,7 @@ body {
 .main_navLin_a:hover{
 	background: var(--color-back);
 }
-.main_navLin_a .active{
+.main_navLink.active .main_navLin_a{
 	background: var(--background-b);
 }
 
